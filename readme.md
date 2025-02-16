@@ -18,10 +18,12 @@ For the past month, I have encountered an issue when it came to TV shows. There 
 ##Setup
 1. In your Qbittorent installation, in the settings menu, make sure you set up the file types you don't want downloaded. You go in the download tab and set up "Excluded file names"
    I have the following inputs setup
-   ```*.txt
-*.jpg
-*.png
-*.lnk
-*.nfo```
+   ```
+   *.txt
+   *.jpg
+   *.png
+   *.lnk
+   *.nfo
+   ```
    ![image](https://github.com/user-attachments/assets/1a58b277-5a16-46dc-a8ad-590cef0ab43f)
 2. Set up the script
