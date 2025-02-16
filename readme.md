@@ -32,7 +32,9 @@ For the past month, I have encountered an issue when it came to TV shows. There 
    cd AutoTorrentCleaner
    ```
 3. Set up the script
+   
    ```nano AutoEmptyTorrentCleaner.sh```
+
 Change the following on top of the script. Make sure to add the correct ip address. (If you are using docker, you can use `172.17.0.1` or `localhost` as the IP address). Make sure the API key and username and password are correct
 ```
 QB_URL="http://localhost:8080"
@@ -43,11 +45,19 @@ SONARR_URL="http://172.17.0.1:8989"
 SONARR_API_KEY="APIKEY"
 ```
 4. Make sure the file is executeable
+   
    ```chmod +x AutoEmptyTorrentCleaner.sh```
+   
 5. Run Script to make sure it works.
+   
    ```./AutoEmptyTorrentCleaner.sh```
+   
 6. (Optional) Add it to cron for automatic execution:
+   
    ```sudo crontab -e```
+   
    Then add this to the bottom to run every 60 minutes. (You can change the interval to what you want.) Make sure you put the correct path, otherwise it won't work
+   
 ```*/60 * * * * /path/to/AutoTorrentCleaner/remove_empty_torrents.sh```
+
 7. Thats it! Feel free to make an issue, if you have any issues.
